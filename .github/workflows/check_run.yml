@@ -1,0 +1,12 @@
+name: Check run
+
+on:
+  check_run:
+    branches:
+      - main
+
+jobs:
+  CheckRun:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Check run"
