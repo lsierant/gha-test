@@ -1,0 +1,20 @@
+name: Go
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  TestSucceeds:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo success!
+
+
+  TestFails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo failure!
+      - run: exit 1
