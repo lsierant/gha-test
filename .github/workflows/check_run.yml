@@ -2,8 +2,6 @@ name: Check run
 
 on:
   check_run:
-    branches:
-      - main
 
 jobs:
   CheckRun:
